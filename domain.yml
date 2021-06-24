@@ -1,0 +1,47 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - member
+  - track
+  - violation
+
+responses:
+  utter_greet:
+  - text: "Hey! Welcome to Women Who Code Website"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you? If not, feel free to ping us at contact@womenwhocode.com"
+
+  utter_happy:
+  - text: "Great, ask me any questions about Women Who Code!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a Women Who Code bot, powered by Rasa."
+
+  utter_member:
+  - text: "Here is the link to be a Women Who Code Member:https://www.womenwhocode.com/"
+
+  utter_track:
+  - text: "You can check out our technical tracks here: https://code.womenwhocode.com/trackoverview/"
+  
+  utter_violation:
+  - text: "We are sorry to hear a Code of Conduct was violated. Please feel free to fill up the incident report form on this link:https://www.womenwhocode.com/codeofconduct "
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
