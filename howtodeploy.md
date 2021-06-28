@@ -26,6 +26,8 @@ responses:
     text: Hey! Welcome to Women Who Code. Please choose from the option below
   ```
 
+After that, make sure you **Train** on the app. And also make sure you activate the model. 
+
 Here is a look into the webapp with buttons.
 
 <img src="images/buttons.png">
