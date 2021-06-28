@@ -10,3 +10,22 @@ Steps to be followed:
 5. After that, click on **Talk to the Bot** option on your left hand side panel and start chatting away
 
 <img src="images/webapp.png">
+
+### Add buttons for intent
+
+You can add buttons for users to choose from in the start. In this particular case, we will attaching it to the greet message and make minimal changes to the code on the domain.yml file.
+
+```
+responses:
+  utter_greet:
+  - buttons:
+    - payload: /track
+      title: track
+    - payload: /member
+      title: Member
+    text: Hey! Welcome to Women Who Code. Please choose from the option below
+  ```
+
+Here is a look into the webapp with buttons.
+
+<img src="images/buttons.png">
